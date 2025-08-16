@@ -1,0 +1,86 @@
+name: flutter_todo_app
+description: "Application Flutter complète avec to-do list, emploi du temps et semainier"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Navigation
+  go_router: ^14.2.7
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Data & Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.4
+
+  # Serialization
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # Date & Time
+  intl: ^0.19.0
+  timezone: ^0.9.4
+
+  # Notifications
+  flutter_local_notifications: ^17.2.3
+
+  # UI & Material 3
+  dynamic_color: ^1.7.0
+  
+  # Utils
+  uuid: ^4.5.1
+  collection: ^1.18.0
+  rrule: ^0.2.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+  # Code Generation
+  build_runner: ^2.4.12
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  hive_generator: ^2.0.1
+  riverpod_generator: ^2.4.3
+
+  # Testing
+  mockito: ^5.4.4
+
+  # Launcher Icons
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 24
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    background_color: "#6750A4"
+    theme_color: "#6750A4"
+  windows:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/icon/icon.png"
